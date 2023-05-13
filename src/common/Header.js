@@ -1,7 +1,7 @@
 import React from "react";
 import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import bg from '../img/bg.png';
-
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
@@ -10,9 +10,8 @@ export default function Header() {
         <Container>
           <Navbar.Brand href="#home">Navbar</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
+            <Link to="/">Home</Link>
+            <Link to="/detail/0">sub</Link>
           </Nav>
         </Container>
       </Navbar>
